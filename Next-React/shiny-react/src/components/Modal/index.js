@@ -1,7 +1,7 @@
 function Modal(props){
     return (
         <div className="modal">
-            <p>props.text</p>
+            <p>{props.text}</p>
             <button className="btn btn--cancel" onClick={props.onClose}>
                 Cancel
             </button>
