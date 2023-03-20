@@ -1,0 +1,25 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "react-app"
+  ],
+  "rules": {
+    "import/order": ["warn", {
+      "groups": ["builtin", "external", "internal"],
+      "pathGroups": [
+        {
+          "pattern": "react",
+          "group": "external",
+          "position": "before"
+        }
+      ],
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      },
+      "pathGroupsExcludedImportTypes": ["builtin"]
+    }]
+  }
+}
