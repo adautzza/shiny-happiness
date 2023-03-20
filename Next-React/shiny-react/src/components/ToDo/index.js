@@ -1,7 +1,7 @@
 import { useState } from "react";
-
 import Backdrop from "../Backdrop";
 import Modal from "../Modal";
+
 
 function ToDo(props) {
     const [showModal, setShowModal] = useState();
@@ -9,7 +9,7 @@ function ToDo(props) {
     function showModalHandler() {
       setShowModal(true);
     }
-  
+    
     function closeModalHandler() {
       setShowModal(false);
     }

@@ -1,6 +1,6 @@
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import i18n from 'i18next';
 
 i18n
   // detect user language
@@ -19,7 +19,18 @@ i18n
     resources: {
       en: {
         translation: {
-          // here we will place our translations...
+          description: {
+            part1: 'Edit <1>src/App.js</1> and save to reload.',
+            part2: 'Learn React'
+          }
+        }
+      },
+      de: {
+        translation: {
+          description: {
+            part1: 'Ändere <1>src/App.js</1> und speichere um neu zu laden.',
+            part2: 'Lerne React'
+          }
         }
       }
     }
