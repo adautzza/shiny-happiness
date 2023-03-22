@@ -1,7 +1,7 @@
+// eslint-disable-next-line 
+import { Trans,useTranslation } from 'react-i18next';
 import './App.css';
 import ToDo from './components/ToDo';
-// eslint-disable-next-line 
-import { useTranslation, Trans } from 'react-i18next';
 
 const lngs = {
   en: { nativeName: 'English' },
