@@ -1,0 +1,6 @@
+{
+    "greeting": "Hello, {{name}}!",
+    "welcome": "Welcome to my app.",
+    "button": "Click me"
+  }
+  
