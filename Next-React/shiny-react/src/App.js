@@ -1,17 +1,22 @@
-import './App.css';
-import ToDo from './components/ToDo';
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import "./App.css";
+import { BalanceCheckPage, ToDoPage } from "./pages";
 
-function App() {
+export default function App() {
   return (
     <>
-    <div className="todo-modal">
-      <h1>Here's my to-do!</h1>
-      <ToDo text="Get a job!"></ToDo>
-      <div className="separator"></div>
-      <ToDo text="Go to interview on Wednesday!"></ToDo>
-    </div>
+      <Router>
+        <Link to="/">Home</Link>
+        <br></br>
+        <Link to="/to-do">To-Do</Link>
+        <br></br>
+        <Link to="/balance">About the money</Link>
+        <Routes>
+          <Route path="/to-do" element={<ToDoPage />} />
+          <Route path="/balance" element={<BalanceCheckPage />} />
+          <Route path="/" element={<BalanceCheckPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
-
-export default App;

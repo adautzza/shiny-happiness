@@ -2,10 +2,17 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "prettier", "simple-import-sort"],
   "extends": [
+    "react-app",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "react-app"
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "rules": {
+    "prettier/prettier": [2, 
+    {
+        "printWidth": 150
+    }],
     "simple-import-sort/imports": ["warn", {
       "groups": [
         ["^react", "^\\u0000", "^@?\\w", "^[^.]", "^\\."],
