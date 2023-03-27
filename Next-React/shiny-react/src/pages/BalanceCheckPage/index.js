@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import { ExpenseItem } from "../../components";
+import ExpenseList from "../../components/ExpenseList";
 
 const expenses = [
   {
@@ -24,20 +24,12 @@ const expenses = [
   },
 ];
 
-const ExpenseList = () => (
-  <div>
-    {expenses.map((expense) => (
-      <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date}></ExpenseItem>
-    ))}
-  </div>
-);
-
 class BalanceCheckPage extends Component {
   render() {
     return (
       <>
         <h1>Here'where the money goes!</h1>
-        <ExpenseList></ExpenseList>
+        <ExpenseList expenses={expenses}></ExpenseList>
       </>
     );
   }
