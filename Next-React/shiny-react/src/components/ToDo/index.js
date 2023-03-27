@@ -2,7 +2,7 @@ import { useState } from "react";
 import Backdrop from "../Backdrop";
 import Modal from "../Modal";
 
-function ToDo(props) {
+const ToDo = (props) => {
   const [showModal, setShowModal] = useState();
 
   function showModalHandler() {
@@ -25,6 +25,6 @@ function ToDo(props) {
       {showModal && <Modal text="Are you sure?" onClose={closeModalHandler} />}
     </div>
   );
-}
+};
 
 export default ToDo;
