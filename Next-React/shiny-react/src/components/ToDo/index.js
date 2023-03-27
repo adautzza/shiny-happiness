@@ -14,7 +14,7 @@ function ToDo(props) {
   }
 
   return (
-    <div className="card">
+    <div className="card--to-do">
       <h2>{props.text}</h2>
       <div className="actions">
         <button className="btn" onClick={showModalHandler}>
