@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import ExpenseList from "../../components/ExpenseList";
+import ExpenseList from "../../components/ExpenseProject/ExpenseList";
 
 const expenses = [
   {
