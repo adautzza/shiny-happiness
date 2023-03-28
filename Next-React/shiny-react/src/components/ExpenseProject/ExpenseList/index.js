@@ -1,6 +1,6 @@
 import "./index.css";
-import { ExpenseItem } from "../../components";
-import Card from "../Card";
+import { ExpenseItem } from "../..";
+import Card from "../../generic/Card";
 
 const ExpenseList = (props) => {
   return (
