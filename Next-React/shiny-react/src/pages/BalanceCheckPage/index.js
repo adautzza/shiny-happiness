@@ -25,6 +25,8 @@ const expenses = [
 ];
 
 const addExpenseHanlder = (expense) => {
+  expenses.push(expense);
+  console.log(expenses);
   console.log(expense);
 };
 
