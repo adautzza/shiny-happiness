@@ -1,7 +1,14 @@
 import "./index.css";
+import ExpenseForm from "../ExpenseForm";
 
 const NewExpense = () => {
-  return <div> "something"</div>;
+  return (
+    <>
+      <div className="new-expense">
+        <ExpenseForm></ExpenseForm>
+      </div>
+    </>
+  );
 };
 
 export default NewExpense;
