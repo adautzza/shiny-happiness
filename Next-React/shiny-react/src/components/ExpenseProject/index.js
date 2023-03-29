@@ -1,4 +1,5 @@
 export { default as ExpenseDate } from "./ExpenseDate";
+export { default as ExpenseFilter } from "./ExpenseFilter";
 export { default as ExpenseForm } from "./ExpenseForm";
 export { default as ExpenseItem } from "./ExpenseItem";
 export { default as ExpenseList } from "./ExpenseList";

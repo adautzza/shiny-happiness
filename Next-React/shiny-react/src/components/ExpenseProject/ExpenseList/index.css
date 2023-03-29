@@ -4,4 +4,13 @@
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
-  }
+}
+
+.expense-filter {
+ width: 50rem;
+ padding: 1rem;
+ background-color: rgb(31, 31, 31);
+ margin: 0 auto;
+ width: 50rem;
+ max-width: 95%;
+}
