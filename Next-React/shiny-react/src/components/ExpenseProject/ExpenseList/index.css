@@ -14,3 +14,7 @@
  width: 50rem;
  max-width: 95%;
 }
+
+.no-expense-notice {
+    color: white;
+}
