@@ -24,12 +24,16 @@ const expenses = [
   },
 ];
 
+const addExpenseHanlder = (expense) => {
+  console.log(expense);
+};
+
 class BalanceCheckPage extends Component {
   render() {
     return (
       <>
         <h1>Here'where the money goes!</h1>
-        <NewExpense></NewExpense>
+        <NewExpense onAddExpense={addExpenseHanlder}></NewExpense>
         <ExpenseList expenses={expenses}></ExpenseList>
       </>
     );
