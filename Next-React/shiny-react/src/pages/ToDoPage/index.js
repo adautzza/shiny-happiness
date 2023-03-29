@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import ToDo from "../../components/ToDoProject/ToDo";
+import ToDo from "../../components/ToDo";
 
 class ToDoPage extends Component {
   render() {
