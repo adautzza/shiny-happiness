@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import ExpenseList from "../../components/ExpenseProject/ExpenseList";
+import { ExpenseList, NewExpense } from "../../components/ExpenseProject";
 
 const expenses = [
   {
@@ -29,6 +29,7 @@ class BalanceCheckPage extends Component {
     return (
       <>
         <h1>Here'where the money goes!</h1>
+        <NewExpense></NewExpense>
         <ExpenseList expenses={expenses}></ExpenseList>
       </>
     );
