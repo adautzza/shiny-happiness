@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2e2929;
 }
 
 code {
@@ -17,5 +18,5 @@ code {
 }
 
 h1, h2 {
-  color: #333333;
+  color: #e8dfdf;
 }

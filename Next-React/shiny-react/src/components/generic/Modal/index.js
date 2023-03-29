@@ -1,4 +1,4 @@
-function Modal(props) {
+const Modal = (props) => {
   return (
     <div className="modal">
       <p>{props.text}</p>
@@ -10,6 +10,6 @@ function Modal(props) {
       </button>
     </div>
   );
-}
+};
 
 export default Modal;

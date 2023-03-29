@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Backdrop from "../Backdrop";
-import Modal from "../Modal";
+import Backdrop from "../generic/Backdrop";
+import Modal from "../generic/Modal";
 
-function ToDo(props) {
+const ToDo = (props) => {
   const [showModal, setShowModal] = useState();
 
   function showModalHandler() {
@@ -14,7 +14,7 @@ function ToDo(props) {
   }
 
   return (
-    <div className="card">
+    <div className="card--to-do">
       <h2>{props.text}</h2>
       <div className="actions">
         <button className="btn" onClick={showModalHandler}>
@@ -25,6 +25,6 @@ function ToDo(props) {
       {showModal && <Modal text="Are you sure?" onClose={closeModalHandler} />}
     </div>
   );
-}
+};
 
 export default ToDo;
