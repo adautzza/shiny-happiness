@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 3rem;
+    background-color: #2d2c2c;
+    color: #959090;
+    text-align: center;
+}
+
+#counter {
+    color: #d7adff;
+    font-size: 3rem;
+}
