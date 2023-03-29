@@ -18,7 +18,7 @@ const ExpenseForm = () => {
             <input type="date" min="2019-01-01" step="2023-12-31" />
           </div>
           <div className="new-expense__actions">
-            <input type="submit">Add Expense</input>
+            <input type="submit" value="Add expense" />
           </div>
         </div>
       </form>
