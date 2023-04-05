@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "./index.css";
 
 const MessageValidator = () => {
   const [counterValue, setCounterValue] = useState(0);
