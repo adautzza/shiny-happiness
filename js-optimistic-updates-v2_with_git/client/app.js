@@ -5,9 +5,33 @@ let id = 0;
 const updatePerson = function(persons, updatedPerson) {
     const existingPerson = persons.find(person => person.id === updatedPerson.id);
 
-    return existingPerson
-        ? persons.map(person => person === existingPerson ? updatedPerson : person)
-        : [...persons, updatedPerson];
+    if (existingPerson) {
+        return persons.map(person => person === existingPerson ? updatedPerson : person);
+    } else {
+        const newPersons = [...persons, updatedPerson];
+        savePerson(updatedPerson);
+        return newPersons;
+    }
+};
+
+const savePerson = async function(person) {
+    const isCreate = person.id < 0;
+
+    const method = isCreate
+        ? 'POST'
+        : 'PATCH';
+
+    const response = await fetch('/persons', {
+        method,
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(person),
+    });
+
+    const result = await response.json();
+
+    console.log('Person saved:', result);
 };
 
 export default class App extends Component {
@@ -19,7 +43,7 @@ export default class App extends Component {
         };
     }
 
-    createPerson() {
+    onClickCreatePerson = () => {
         const person = {
             name: '',
             id: --id,
@@ -28,19 +52,19 @@ export default class App extends Component {
         this.setState(state => ({
             persons: updatePerson(state.persons, person),
         }));
-
-        this.savePerson(person);
     }
 
-    onClickCreatePerson = () => {
-        this.createPerson();
+    onClickSaveName = (person) => {
+        if (person.name.trim() === '') {
+            return; 
+        }
+        const updatedPersons = updatePerson(this.state.persons, person);
+        this.setState({ persons: updatedPersons }, () => {
+            savePerson(person);
+        });
     }
 
-    onClickSaveName(person) {
-        this.savePerson(person);
-    }
-
-    onChangeName(person, event) {
+    onChangeName = (person, event) => {
         const name = event.target.value;
 
         const updatedPerson = {
@@ -50,28 +74,6 @@ export default class App extends Component {
 
         this.setState(state => ({
             persons: updatePerson(state.persons, updatedPerson),
-        }));
-    }
-
-    async savePerson(person) {
-        const isCreate = person.id < 0;
-
-        const method = isCreate
-            ? 'POST'
-            : 'PATCH';
-
-        const response = await fetch('/persons', {
-            method,
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(person),
-        });
-
-        const result = await response.json();
-
-        this.setState(state => ({
-            persons: updatePerson(state.persons, result),
         }));
     }
 
