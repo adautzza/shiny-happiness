@@ -63,6 +63,11 @@
     cursor: pointer;
     border-radius: 4px;
   }
+
+  .challenge-person-edit-name-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
   
   .edited-name-and-id {
     display: flex;

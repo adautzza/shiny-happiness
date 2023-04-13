@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div class="challenge">
+    <div className="challenge">
       <button 
       className="challenge-create-person-button"
       data-test="challenge-create-person-button"

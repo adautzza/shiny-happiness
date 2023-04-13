@@ -6,10 +6,12 @@ const SavePerson = () => {
   const [name, setName] = useState('');
   const [editing, setEditing] = useState(true);
   const [pendingName, setPendingName] = useState('');
+  const [createClicked, setCreateClicked] = useState(false);
 
   const handleSaveNameClick = () => {
     setName(pendingName);
     setEditing(false);
+    setCreateClicked(true);
   };
 
   const handleEditNameClick = () => {
@@ -94,9 +96,10 @@ const SavePerson = () => {
         </div>
         </div>
         <button
-          className="challenge-person-edit-name-button"
+          className= { id == ''  ? "challenge-person-edit-name-button disabled" : "challenge-person-edit-name-button"} 
           data-test="challenge-person-edit-name-button"
           onClick={handleEditNameClick}
+          disabled={id == ''}
         >
           Edit Name
         </button>

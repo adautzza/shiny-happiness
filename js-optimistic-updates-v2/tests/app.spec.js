@@ -111,8 +111,8 @@ test('Challenge', async ({ page }) => {
     
 
     // GEO - after adding the debounced fetch, we don't create 5 persons anymore, but only 1, so at athe moment this does not work, but with debounce yes
-    // expect(persons.length).toBe(1);
-    // expect(persons[0].name).toBe('12345');
+    expect(persons.length).toBe(1);
+    expect(persons[0].name).toBe('12345');
 
     // Geo - we have to wrap the following test case just like it was before
     requests.onRequest(async function() {
