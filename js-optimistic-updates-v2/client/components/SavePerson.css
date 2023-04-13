@@ -1,0 +1,83 @@
+  .challenge-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .challenge-person-name {
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .challenge-person-save-name-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .challenge-edit-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .challenge-person-edit-name-button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .edited-name-and-id {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .edited-name-and-id-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .edited-name-and-id-id {
+    font-size: 16px;
+    font-style: italic;
+    color: #999;
+  }
