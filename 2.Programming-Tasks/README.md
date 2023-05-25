@@ -1,4 +1,3 @@
-
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Shiny Happiness" />
 
@@ -7,7 +6,7 @@
   <!-- <a href="https://shinyhappiness.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Shiny Happiness</h1>
+<h1 align="center">Programming Tasks</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/adautzza/shiny-happiness?color=56BEB8">
@@ -35,7 +34,8 @@
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-files">Files</a> &#xa0; | &#xa0;
+  <a href="#sparkles-projects">Projects</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/adautzza" target="_blank">Author</a>
 </p>
@@ -44,25 +44,25 @@
 
 ## :dart: About ##
 
-🦄 A repository for shiny happiness! 🦄
+A directory that contains various programming tasks.
 
+## :sparkles: Projects ##
 
-## :sparkles: Files ##
+### JS Optimistic Updates
+:heavy_check_mark: Obtain optimistic updates about the users from the server;
 
+## :rocket: Technologies ##
 
-### 1. Next-React
-A directory which contains a project in next and a project in react. 
-The react project is currently the highlihtt :)
+The following tools were used in these projects:
 
-### 2. Programming tasks
-A directory which contains diverse programming tasks.
-
-### 3. JS-Docs
-A directory which contains personal resources realted to development.
+- [Node.js](https://nodejs.org/en/)
+- [React](https://react.dev/)
 
 
 ## :memo: License ##
 
-Made with :heart: by <a href="https://github.com/adautzza" target="_blank">Geo</a>
+Made with :heart: by <a href="https://github.com/adautzza" target="_blank">adautzza</a>
 
 &#xa0;
+
+<a href="#top">Back to top</a>

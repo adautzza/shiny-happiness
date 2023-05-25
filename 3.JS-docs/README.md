@@ -1,4 +1,3 @@
-
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Shiny Happiness" />
 
@@ -7,7 +6,7 @@
   <!-- <a href="https://shinyhappiness.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Shiny Happiness</h1>
+<h1 align="center">JS Docs</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/adautzza/shiny-happiness?color=56BEB8">
@@ -35,7 +34,8 @@
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-files">Files</a> &#xa0; | &#xa0;
+  <a href="#sparkles-javascript">Javascript</a> &#xa0; | &#xa0;
+  <a href="#rocket-seo-suggestions">SEO Suggestions</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/adautzza" target="_blank">Author</a>
 </p>
@@ -44,21 +44,32 @@
 
 ## :dart: About ##
 
-🦄 A repository for shiny happiness! 🦄
+Personal Development Notes
+
+## :sparkles: Javascript ##
+
+_What is imperative programming?_ \
+:heavy_check_mark: Use statement after statement to change a program's state;
 
 
-## :sparkles: Files ##
+## :rocket: SEO Suggestions ##
 
+#### Wordpress
+- install SEO plugins
+- mobile friendly
+- use social media to promote your site
+- find the right keywords for your pages
+- have SEO-friendly URLs (descriptive, short, readable, keyword-rich, consistent)
 
-### 1. Next-React
-A directory which contains a project in next and a project in react. 
-The react project is currently the highlihtt :)
-
-### 2. Programming tasks
-A directory which contains diverse programming tasks.
-
-### 3. JS-Docs
-A directory which contains personal resources realted to development.
+#### React
+- use SSR (generate HTML content on server, then send to client)\
+- use React Helmet (to add metadata to your pages)
+- find the right keywords for your pages
+- high-Quality backlinks (links from other website that point to yours)
+- improve page loading speed 
+    - lazy loading - load non-critical resources later 
+    - code splitting - break huge Js files into smaller schunks
+    - caching - store frequently acessed resources on browser or CDN
 
 
 ## :memo: License ##
@@ -66,3 +77,5 @@ A directory which contains personal resources realted to development.
 Made with :heart: by <a href="https://github.com/adautzza" target="_blank">Geo</a>
 
 &#xa0;
+
+<a href="#top">Back to top</a>
