@@ -52,7 +52,7 @@
 
 ### 1. Next-React
 A directory which contains a project in next and a project in react. 
-The react project is currently the highlihtt :)
+The react project is currently the highlight :)
 
 ### 2. Programming tasks
 A directory which contains diverse programming tasks.
