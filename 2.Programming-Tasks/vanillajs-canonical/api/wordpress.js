@@ -1,4 +1,4 @@
-// api/wordpress.js
+// get data from wordpress api
 
 const fetch = require('node-fetch');
 

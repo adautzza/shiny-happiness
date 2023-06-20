@@ -1,4 +1,4 @@
-// models/post.js
+// create the model to represent a single Blog Post
 
 class Post {
     constructor(id, date, title, content, link) {
