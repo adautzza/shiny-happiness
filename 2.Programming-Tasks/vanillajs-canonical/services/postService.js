@@ -10,8 +10,8 @@ async function getPosts() {
 }
 
 function mapPostDataToModel(postData) {
-  const { id, date, title, content, link } = postData;
-  return new Post(id, date, title.rendered, content.rendered, link);
+  const { id, date, title, link } = postData;
+  return new Post(id, date, title.rendered, link);
 }
 
 module.exports = {
