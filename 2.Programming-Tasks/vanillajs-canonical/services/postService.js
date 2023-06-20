@@ -5,7 +5,6 @@ async function getPosts() {
   try {
     const postsData = await wordpressApi.getPosts();
     const posts = postsData.map(mapPostDataToModel);
-    console.log(posts);
     return posts;
   } catch (error) {
     console.error('Error occurred while fetching posts:', error);
@@ -18,8 +17,9 @@ function mapPostDataToModel(postData) {
   const formattedDate = formatDate(date);
   const author = _embedded && _embedded.author && _embedded.author[0] ? _embedded.author[0].name : 'Unknown author';
   const category = _embedded && _embedded['wp:term'] && _embedded['wp:term'][2] && _embedded['wp:term'][2][0] ? _embedded['wp:term'][2][0].name : 'Uncategorized';
+  const type = _embedded && _embedded['wp:term'] && _embedded['wp:term'][0] && _embedded['wp:term'][0][0] ? _embedded['wp:term'][0][0].name : 'Uncategorized';
 
-  return new Post(id, formattedDate, title && title.rendered ? title.rendered : 'Untitled', link, featured_media, author, category);
+  return new Post(id, formattedDate, title && title.rendered ? title.rendered : 'Untitled', link, featured_media, author, category, type);
 }
 
 function formatDate(dateString) {
