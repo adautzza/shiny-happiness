@@ -2,31 +2,39 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.10.1.min.css">
+  <link rel="stylesheet" href="style.css">
   <style>
     .card {
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      width: 300px;
-    }
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
   </style>
 </head>
 <body>
-  <% posts.forEach(function(post) { %>
-    <div class="card">
-      <div class="vf-card__title"><%= post.category %></div>
-      <div class="vf-card__image">
-        <img src="<%= post.featured_media %>" alt="Blog Post Image">
+  <div class="card__container row u-equal-height u-clearfix">
+    <% posts.forEach(function(post) { %>
+      <div class="card col-4 p-card ">
+        <div class="vf-card__title">
+          <h5 class="p-muted-heading"><%= post.category %></h5>
+        </div>
+        <hr class="is-muted">
+        <div class="p-card__content">
+          <div class="vf-card__image u-crop--16-9">
+            <div class="lazyload">
+              <img src="<%= post.featured_media %>" alt="Blog Post Image">
+            </div>
+          </div>
+          <div class="vf-card__content">
+            <h3 class="vf-card__content-heading p-heading--4"><%= post.title %></h3>
+            <p class="vf-card__content-subheading">By <%= post.author_name %> on <%= post.date %></p>
+          </div>
+          <hr class="is-muted">
+          <p class="vf-card__content-type p-card__footer"><%= post.type %></p>
+        </div>
       </div>
-      <div class="vf-card__content">
-        <h3 class="vf-card__content-heading"><%= post.title %></h3>
-        <p class="vf-card__content-subheading">By <%= post.author_name %> on <%= post.date %></p>
-        <p class="vf-card__content-type"><%= post.type %></p>
-      </div>
-    </div>
-  <% }); %>
-
+    <% }); %>
+  </div>
   <script src="https://assets.ubuntu.com/v1/vanilla-framework-version-2.10.1.min.js"></script>
 </body>
 </html>
