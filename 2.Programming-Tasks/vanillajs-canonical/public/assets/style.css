@@ -1,6 +1,7 @@
 .col-4.p-card--highlighted.p-card--post {
   display: flex !important;
   flex-direction: column;
+  border-top: 3px solid #b35bd2;
 }
 .p-card__content {
   flex-basis: 80%;
