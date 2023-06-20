@@ -6,7 +6,7 @@ const Post = require('../models/post');
 async function getPosts() {
   const postsData = await wordpressApi.getPosts();
   const posts = postsData.map(mapPostDataToModel);
-  return posts;
+  return posts
 }
 
 function mapPostDataToModel(postData) {

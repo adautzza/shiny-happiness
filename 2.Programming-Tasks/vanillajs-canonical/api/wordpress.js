@@ -1,6 +1,5 @@
 // get data from wordpress api
 
-const fetch = require('node-fetch');
 
 async function getPosts() {
   const url = 'https://people.canonical.com/~anthonydillon/wp-json/wp/v2/posts.json';
