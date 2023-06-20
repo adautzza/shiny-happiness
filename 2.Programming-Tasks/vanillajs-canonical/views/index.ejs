@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.10.1.min.css">
+  <style>
+    .card {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <% posts.forEach(function(post) { %>
+    <div class="card">
+      <div class="vf-card__title"><%= post.category %></div>
+      <div class="vf-card__image">
+        <img src="<%= post.featured_media %>" alt="Blog Post Image">
+      </div>
+      <div class="vf-card__content">
+        <h3 class="vf-card__content-heading"><%= post.title %></h3>
+        <p class="vf-card__content-subheading">By <%= post.author_name %> on <%= post.date %></p>
+        <p class="vf-card__content-type"><%= post.type %></p>
+      </div>
+    </div>
+  <% }); %>
+
+  <script src="https://assets.ubuntu.com/v1/vanilla-framework-version-2.10.1.min.js"></script>
+</body>
+</html>
