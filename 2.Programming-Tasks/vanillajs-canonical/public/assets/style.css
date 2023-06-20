@@ -1,0 +1,10 @@
+.col-4.p-card--highlighted.p-card--post {
+  display: flex !important;
+  flex-direction: column;
+}
+.p-card__content {
+  flex-basis: 80%;
+}
+.row {
+  margin-top: 2rem !important;
+}
